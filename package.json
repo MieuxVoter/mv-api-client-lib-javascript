@@ -1,11 +1,11 @@
 {
   "name": "mv-api-client-lib",
   "version": "0.0.0-dev",
-  "description": "This_is_a_deliberation_service_using_majority_judgment_polling_Its_libre_software___source_https__github_com_mieuxvoter_made_and_maintained_by__MieuxVoter_fr_https__mieuxvoter_fr_Youre_browsing_the_API_documentation_and_sandbox__Use_one_of_the_known_clients__TODO_add_an_URL_to_a_client_of_the_API_Try_it_out_the_hard_way_Create_an_accountYou_will_need_a_user_account_to_interact_with_polls_Head_to_Registration__POST__users_below_Click__Try_it_out__set_your_desired_credentials_and_execute_the_query_Scroll_down_to_see_the_response__AuthenticateUse_your_credentials_in_the_Login__POST___jwt_and_the_API_will_return_a_Json_Web_Token_valid_for_one_hour_Copy_the_token__not_the_whole_response_and_without_quotes_in_the_field_behind_the_Authorize__button__Create_a_pollPoll__POST__pollsKeep_the_response_youll_need_the_uuids__TODO_document_invitation_generation_Submit_judgmentsBallot__POST__polls_pollId_proposals_proposalId_ballotsOne_request_per_proposal_for_now___We_plan_on_making_an_endpoint_to_submit_them_all_at_once__Collect_the_resultsResult__GET__polls_id_result_Use_a_generated_client_library__for_php___link__for_typescript_node___link__There_are_clients_we_can_generate_for_most_languages_Get_in_touch_if_youd_like_one_in_particularOr_clone_this_project_and_use_bin_generate_client_bash__t_whatever_",
+  "description": "A javascript client for the Majority Judgment OpenAPI of MieuxVoter. Sandbox: https://oas.mieuxvoter.fr This library was generated automatically, best not edit it directly. ",
   "license": "MIT",
   "main": "dist/MieuxVoter/index.js",
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "npx babel src -d dist",
     "prepack": "npm run build",
     "test": "mocha --require @babel/register --recursive"
   },
