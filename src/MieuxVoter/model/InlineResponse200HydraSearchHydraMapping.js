@@ -63,58 +63,6 @@ class InlineResponse200HydraSearchHydraMapping {
         return obj;
     }
 
-/**
-     * @return {String}
-     */
-    getType() {
-        return this.@type;
-    }
-
-    /**
-     * @param {String} type
-     */
-    setType(type) {
-        this['@type'] = type;
-    }
-/**
-     * @return {String}
-     */
-    getVariable() {
-        return this.variable;
-    }
-
-    /**
-     * @param {String} variable
-     */
-    setVariable(variable) {
-        this['variable'] = variable;
-    }
-/**
-     * @return {String}
-     */
-    getProperty() {
-        return this.property;
-    }
-
-    /**
-     * @param {String} property
-     */
-    setProperty(property) {
-        this['property'] = property;
-    }
-/**
-     * @return {Boolean}
-     */
-    getRequired() {
-        return this.required;
-    }
-
-    /**
-     * @param {Boolean} required
-     */
-    setRequired(required) {
-        this['required'] = required;
-    }
 
 }
 

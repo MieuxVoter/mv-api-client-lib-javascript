@@ -68,59 +68,6 @@ class InlineResponse2004 {
         return obj;
     }
 
-/**
-     * @return {Array.<module:MieuxVoter/model/Ballotjsonld>}
-     */
-    getHydramember() {
-        return this.hydra:member;
-    }
-
-    /**
-     * @param {Array.<module:MieuxVoter/model/Ballotjsonld>} hydramember
-     */
-    setHydramember(hydramember) {
-        this['hydra:member'] = hydramember;
-    }
-/**
-     * minimum: 0
-     * @return {Number}
-     */
-    getHydratotalItems() {
-        return this.hydra:totalItems;
-    }
-
-    /**
-     * @param {Number} hydratotalItems
-     */
-    setHydratotalItems(hydratotalItems) {
-        this['hydra:totalItems'] = hydratotalItems;
-    }
-/**
-     * @return {module:MieuxVoter/model/InlineResponse200HydraView}
-     */
-    getHydraview() {
-        return this.hydra:view;
-    }
-
-    /**
-     * @param {module:MieuxVoter/model/InlineResponse200HydraView} hydraview
-     */
-    setHydraview(hydraview) {
-        this['hydra:view'] = hydraview;
-    }
-/**
-     * @return {module:MieuxVoter/model/InlineResponse200HydraSearch}
-     */
-    getHydrasearch() {
-        return this.hydra:search;
-    }
-
-    /**
-     * @param {module:MieuxVoter/model/InlineResponse200HydraSearch} hydrasearch
-     */
-    setHydrasearch(hydrasearch) {
-        this['hydra:search'] = hydrasearch;
-    }
 
 }
 

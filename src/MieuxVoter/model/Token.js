@@ -55,19 +55,6 @@ class Token {
         return obj;
     }
 
-/**
-     * @return {String}
-     */
-    getToken() {
-        return this.token;
-    }
-
-    /**
-     * @param {String} token
-     */
-    setToken(token) {
-        this['token'] = token;
-    }
 
 }
 

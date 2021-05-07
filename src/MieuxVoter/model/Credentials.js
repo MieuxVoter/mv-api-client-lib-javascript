@@ -58,36 +58,6 @@ class Credentials {
         return obj;
     }
 
-/**
-     * Returns The email or username you chose during registration.
-     * @return {String}
-     */
-    getUsernameOrEmail() {
-        return this.usernameOrEmail;
-    }
-
-    /**
-     * Sets The email or username you chose during registration.
-     * @param {String} usernameOrEmail The email or username you chose during registration.
-     */
-    setUsernameOrEmail(usernameOrEmail) {
-        this['usernameOrEmail'] = usernameOrEmail;
-    }
-/**
-     * Returns The password or passphrase you chose during registration.
-     * @return {String}
-     */
-    getPassword() {
-        return this.password;
-    }
-
-    /**
-     * Sets The password or passphrase you chose during registration.
-     * @param {String} password The password or passphrase you chose during registration.
-     */
-    setPassword(password) {
-        this['password'] = password;
-    }
 
 }
 

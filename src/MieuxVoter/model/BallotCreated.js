@@ -61,51 +61,6 @@ class BallotCreated {
         return obj;
     }
 
-/**
-     * Returns Universally Unique IDentifier of the Ballot.
-     * @return {String}
-     */
-    getUuid() {
-        return this.uuid;
-    }
-
-    /**
-     * Sets Universally Unique IDentifier of the Ballot.
-     * @param {String} uuid Universally Unique IDentifier of the Ballot.
-     */
-    setUuid(uuid) {
-        this['uuid'] = uuid;
-    }
-/**
-     * Returns The Majority Judgment Poll Proposal the author is giving a grade to.
-     * @return {String}
-     */
-    getProposal() {
-        return this.proposal;
-    }
-
-    /**
-     * Sets The Majority Judgment Poll Proposal the author is giving a grade to.
-     * @param {String} proposal The Majority Judgment Poll Proposal the author is giving a grade to.
-     */
-    setProposal(proposal) {
-        this['proposal'] = proposal;
-    }
-/**
-     * Returns The Grade attributed by the Judge to the Proposal.
-     * @return {String}
-     */
-    getGrade() {
-        return this.grade;
-    }
-
-    /**
-     * Sets The Grade attributed by the Judge to the Proposal.
-     * @param {String} grade The Grade attributed by the Judge to the Proposal.
-     */
-    setGrade(grade) {
-        this['grade'] = grade;
-    }
 
 }
 

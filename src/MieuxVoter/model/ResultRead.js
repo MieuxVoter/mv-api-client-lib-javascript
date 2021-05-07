@@ -63,49 +63,6 @@ class ResultRead {
         return obj;
     }
 
-/**
-     * @return {module:MieuxVoter/model/PollRead}
-     */
-    getPoll() {
-        return this.poll;
-    }
-
-    /**
-     * @param {module:MieuxVoter/model/PollRead} poll
-     */
-    setPoll(poll) {
-        this['poll'] = poll;
-    }
-/**
-     * Returns The name of the algorithm used to derive this Result.
-     * @return {String}
-     */
-    getAlgorithm() {
-        return this.algorithm;
-    }
-
-    /**
-     * Sets The name of the algorithm used to derive this Result.
-     * @param {String} algorithm The name of the algorithm used to derive this Result.
-     */
-    setAlgorithm(algorithm) {
-        this['algorithm'] = algorithm;
-    }
-/**
-     * Returns In order, each Proposals' Result.  In extreme, low-participation polls, some Proposals may have the same rank ; in that case, their order should be the order they were added to the poll.
-     * @return {Array.<module:MieuxVoter/model/ProposalResultRead>}
-     */
-    getLeaderboard() {
-        return this.leaderboard;
-    }
-
-    /**
-     * Sets In order, each Proposals' Result.  In extreme, low-participation polls, some Proposals may have the same rank ; in that case, their order should be the order they were added to the poll.
-     * @param {Array.<module:MieuxVoter/model/ProposalResultRead>} leaderboard In order, each Proposals' Result.  In extreme, low-participation polls, some Proposals may have the same rank ; in that case, their order should be the order they were added to the poll.
-     */
-    setLeaderboard(leaderboard) {
-        this['leaderboard'] = leaderboard;
-    }
 
 }
 

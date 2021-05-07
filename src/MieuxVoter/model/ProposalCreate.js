@@ -59,34 +59,6 @@ class ProposalCreate {
         return obj;
     }
 
-/**
-     * Returns The title of the proposal.
-     * @return {String}
-     */
-    getTitle() {
-        return this.title;
-    }
-
-    /**
-     * Sets The title of the proposal.
-     * @param {String} title The title of the proposal.
-     */
-    setTitle(title) {
-        this['title'] = title;
-    }
-/**
-     * @return {module:MieuxVoter/model/PollCreate}
-     */
-    getPoll() {
-        return this.poll;
-    }
-
-    /**
-     * @param {module:MieuxVoter/model/PollCreate} poll
-     */
-    setPoll(poll) {
-        this['poll'] = poll;
-    }
 
 }
 

@@ -65,60 +65,6 @@ class BallotjsonldCreate {
         return obj;
     }
 
-/**
-     * @return {String}
-     */
-    getContext() {
-        return this.@context;
-    }
-
-    /**
-     * @param {String} context
-     */
-    setContext(context) {
-        this['@context'] = context;
-    }
-/**
-     * @return {String}
-     */
-    getId() {
-        return this.@id;
-    }
-
-    /**
-     * @param {String} id
-     */
-    setId(id) {
-        this['@id'] = id;
-    }
-/**
-     * @return {String}
-     */
-    getType() {
-        return this.@type;
-    }
-
-    /**
-     * @param {String} type
-     */
-    setType(type) {
-        this['@type'] = type;
-    }
-/**
-     * Returns The Grade attributed by the Judge to the Proposal.
-     * @return {module:MieuxVoter/model/AnyOfGradejsonldCreate}
-     */
-    getGrade() {
-        return this.grade;
-    }
-
-    /**
-     * Sets The Grade attributed by the Judge to the Proposal.
-     * @param {module:MieuxVoter/model/AnyOfGradejsonldCreate} grade The Grade attributed by the Judge to the Proposal.
-     */
-    setGrade(grade) {
-        this['grade'] = grade;
-    }
 
 }
 

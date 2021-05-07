@@ -58,34 +58,6 @@ class GradeCreate {
         return obj;
     }
 
-/**
-     * @return {String}
-     */
-    getName() {
-        return this.name;
-    }
-
-    /**
-     * @param {String} name
-     */
-    setName(name) {
-        this['name'] = name;
-    }
-/**
-     * Returns Used to compare grades procedurally.  \\n Usually starts at zero (0) and ends at <MAXIMUM_GRADES>-1.  \\n Grades of the same poll MUST have unique levels between themselves.
-     * @return {Number}
-     */
-    getLevel() {
-        return this.level;
-    }
-
-    /**
-     * Sets Used to compare grades procedurally.  \\n Usually starts at zero (0) and ends at <MAXIMUM_GRADES>-1.  \\n Grades of the same poll MUST have unique levels between themselves.
-     * @param {Number} level Used to compare grades procedurally.  \\n Usually starts at zero (0) and ends at <MAXIMUM_GRADES>-1.  \\n Grades of the same poll MUST have unique levels between themselves.
-     */
-    setLevel(level) {
-        this['level'] = level;
-    }
 
 }
 

@@ -61,51 +61,6 @@ class ProposalGradeResultRead {
         return obj;
     }
 
-/**
-     * Returns The IRI of the Grade this Result is about.
-     * @return {String}
-     */
-    getGrade() {
-        return this.grade;
-    }
-
-    /**
-     * Sets The IRI of the Grade this Result is about.
-     * @param {String} grade The IRI of the Grade this Result is about.
-     */
-    setGrade(grade) {
-        this['grade'] = grade;
-    }
-/**
-     * Returns The IRI of the Proposal this Result is about.
-     * @return {String}
-     */
-    getProposal() {
-        return this.proposal;
-    }
-
-    /**
-     * Sets The IRI of the Proposal this Result is about.
-     * @param {String} proposal The IRI of the Proposal this Result is about.
-     */
-    setProposal(proposal) {
-        this['proposal'] = proposal;
-    }
-/**
-     * Returns Amount of Ballots emitted for this Grade on the Proposal.
-     * @return {Number}
-     */
-    getTally() {
-        return this.tally;
-    }
-
-    /**
-     * Sets Amount of Ballots emitted for this Grade on the Proposal.
-     * @param {Number} tally Amount of Ballots emitted for this Grade on the Proposal.
-     */
-    setTally(tally) {
-        this['tally'] = tally;
-    }
 
 }
 

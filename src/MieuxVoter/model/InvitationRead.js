@@ -65,64 +65,6 @@ class InvitationRead {
         return obj;
     }
 
-/**
-     * Returns Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     * @return {String}
-     */
-    getUuid() {
-        return this.uuid;
-    }
-
-    /**
-     * Sets Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     * @param {String} uuid Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     */
-    setUuid(uuid) {
-        this['uuid'] = uuid;
-    }
-/**
-     * @return {module:MieuxVoter/model/PollRead}
-     */
-    getPoll() {
-        return this.poll;
-    }
-
-    /**
-     * @param {module:MieuxVoter/model/PollRead} poll
-     */
-    setPoll(poll) {
-        this['poll'] = poll;
-    }
-/**
-     * Returns Whether this invitation was accepted by someone already.
-     * @return {Boolean}
-     */
-    getAccepted() {
-        return this.accepted;
-    }
-
-    /**
-     * Sets Whether this invitation was accepted by someone already.
-     * @param {Boolean} accepted Whether this invitation was accepted by someone already.
-     */
-    setAccepted(accepted) {
-        this['accepted'] = accepted;
-    }
-/**
-     * Returns Whether this invitation was accepted by the current user.
-     * @return {Boolean}
-     */
-    getAcceptedByYou() {
-        return this.acceptedByYou;
-    }
-
-    /**
-     * Sets Whether this invitation was accepted by the current user.
-     * @param {Boolean} acceptedByYou Whether this invitation was accepted by the current user.
-     */
-    setAcceptedByYou(acceptedByYou) {
-        this['acceptedByYou'] = acceptedByYou;
-    }
 
 }
 

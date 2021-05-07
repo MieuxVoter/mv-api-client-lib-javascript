@@ -64,58 +64,6 @@ class InlineResponse200HydraSearch {
         return obj;
     }
 
-/**
-     * @return {String}
-     */
-    getType() {
-        return this.@type;
-    }
-
-    /**
-     * @param {String} type
-     */
-    setType(type) {
-        this['@type'] = type;
-    }
-/**
-     * @return {String}
-     */
-    getHydratemplate() {
-        return this.hydra:template;
-    }
-
-    /**
-     * @param {String} hydratemplate
-     */
-    setHydratemplate(hydratemplate) {
-        this['hydra:template'] = hydratemplate;
-    }
-/**
-     * @return {String}
-     */
-    getHydravariableRepresentation() {
-        return this.hydra:variableRepresentation;
-    }
-
-    /**
-     * @param {String} hydravariableRepresentation
-     */
-    setHydravariableRepresentation(hydravariableRepresentation) {
-        this['hydra:variableRepresentation'] = hydravariableRepresentation;
-    }
-/**
-     * @return {Array.<module:MieuxVoter/model/InlineResponse200HydraSearchHydraMapping>}
-     */
-    getHydramapping() {
-        return this.hydra:mapping;
-    }
-
-    /**
-     * @param {Array.<module:MieuxVoter/model/InlineResponse200HydraSearchHydraMapping>} hydramapping
-     */
-    setHydramapping(hydramapping) {
-        this['hydra:mapping'] = hydramapping;
-    }
 
 }
 

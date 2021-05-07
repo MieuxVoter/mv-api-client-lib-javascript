@@ -61,49 +61,6 @@ class GradeRead {
         return obj;
     }
 
-/**
-     * Returns Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     * @return {String}
-     */
-    getUuid() {
-        return this.uuid;
-    }
-
-    /**
-     * Sets Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     * @param {String} uuid Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     */
-    setUuid(uuid) {
-        this['uuid'] = uuid;
-    }
-/**
-     * @return {String}
-     */
-    getName() {
-        return this.name;
-    }
-
-    /**
-     * @param {String} name
-     */
-    setName(name) {
-        this['name'] = name;
-    }
-/**
-     * Returns Used to compare grades procedurally.  \\n Usually starts at zero (0) and ends at <MAXIMUM_GRADES>-1.  \\n Grades of the same poll MUST have unique levels between themselves.
-     * @return {Number}
-     */
-    getLevel() {
-        return this.level;
-    }
-
-    /**
-     * Sets Used to compare grades procedurally.  \\n Usually starts at zero (0) and ends at <MAXIMUM_GRADES>-1.  \\n Grades of the same poll MUST have unique levels between themselves.
-     * @param {Number} level Used to compare grades procedurally.  \\n Usually starts at zero (0) and ends at <MAXIMUM_GRADES>-1.  \\n Grades of the same poll MUST have unique levels between themselves.
-     */
-    setLevel(level) {
-        this['level'] = level;
-    }
 
 }
 

@@ -67,64 +67,6 @@ class UserRead {
         return obj;
     }
 
-/**
-     * @return {String}
-     */
-    getUuid() {
-        return this.uuid;
-    }
-
-    /**
-     * @param {String} uuid
-     */
-    setUuid(uuid) {
-        this['uuid'] = uuid;
-    }
-/**
-     * Returns When provided, the email must be unique amongst Users.
-     * @return {String}
-     */
-    getEmail() {
-        return this.email;
-    }
-
-    /**
-     * Sets When provided, the email must be unique amongst Users.
-     * @param {String} email When provided, the email must be unique amongst Users.
-     */
-    setEmail(email) {
-        this['email'] = email;
-    }
-/**
-     * Returns The username must be unique amongst Users.
-     * @return {String}
-     */
-    getUsername() {
-        return this.username;
-    }
-
-    /**
-     * Sets The username must be unique amongst Users.
-     * @param {String} username The username must be unique amongst Users.
-     */
-    setUsername(username) {
-        this['username'] = username;
-    }
-/**
-     * Returns The polls authored by this User.
-     * @return {Array.<module:MieuxVoter/model/PollRead>}
-     */
-    getPolls() {
-        return this.polls;
-    }
-
-    /**
-     * Sets The polls authored by this User.
-     * @param {Array.<module:MieuxVoter/model/PollRead>} polls The polls authored by this User.
-     */
-    setPolls(polls) {
-        this['polls'] = polls;
-    }
 
 }
 

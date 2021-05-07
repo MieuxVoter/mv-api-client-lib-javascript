@@ -56,21 +56,6 @@ class BallotCreate {
         return obj;
     }
 
-/**
-     * Returns The Grade attributed by the Judge to the Proposal.
-     * @return {module:MieuxVoter/model/AnyOfGradeCreate}
-     */
-    getGrade() {
-        return this.grade;
-    }
-
-    /**
-     * Sets The Grade attributed by the Judge to the Proposal.
-     * @param {module:MieuxVoter/model/AnyOfGradeCreate} grade The Grade attributed by the Judge to the Proposal.
-     */
-    setGrade(grade) {
-        this['grade'] = grade;
-    }
 
 }
 

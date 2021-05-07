@@ -63,49 +63,6 @@ class BallotRead {
         return obj;
     }
 
-/**
-     * Returns Universally Unique IDentifier of the Ballot.
-     * @return {String}
-     */
-    getUuid() {
-        return this.uuid;
-    }
-
-    /**
-     * Sets Universally Unique IDentifier of the Ballot.
-     * @param {String} uuid Universally Unique IDentifier of the Ballot.
-     */
-    setUuid(uuid) {
-        this['uuid'] = uuid;
-    }
-/**
-     * @return {module:MieuxVoter/model/ProposalRead}
-     */
-    getProposal() {
-        return this.proposal;
-    }
-
-    /**
-     * @param {module:MieuxVoter/model/ProposalRead} proposal
-     */
-    setProposal(proposal) {
-        this['proposal'] = proposal;
-    }
-/**
-     * Returns The Grade attributed by the Judge to the Proposal.
-     * @return {module:MieuxVoter/model/AnyOfGradeRead}
-     */
-    getGrade() {
-        return this.grade;
-    }
-
-    /**
-     * Sets The Grade attributed by the Judge to the Proposal.
-     * @param {module:MieuxVoter/model/AnyOfGradeRead} grade The Grade attributed by the Judge to the Proposal.
-     */
-    setGrade(grade) {
-        this['grade'] = grade;
-    }
 
 }
 

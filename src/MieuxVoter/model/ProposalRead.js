@@ -58,36 +58,6 @@ class ProposalRead {
         return obj;
     }
 
-/**
-     * Returns Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     * @return {String}
-     */
-    getUuid() {
-        return this.uuid;
-    }
-
-    /**
-     * Sets Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     * @param {String} uuid Universally Unique IDentifier, something like this: 10e3c5e8-4a7d-4d23-a20a-8c175bf45a92
-     */
-    setUuid(uuid) {
-        this['uuid'] = uuid;
-    }
-/**
-     * Returns The title of the proposal.
-     * @return {String}
-     */
-    getTitle() {
-        return this.title;
-    }
-
-    /**
-     * Sets The title of the proposal.
-     * @param {String} title The title of the proposal.
-     */
-    setTitle(title) {
-        this['title'] = title;
-    }
 
 }
 
