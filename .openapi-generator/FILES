@@ -3,7 +3,6 @@
 .travis.yml
 LICENSE
 README.md
-README.md
 docs/AdministrationApi.md
 docs/Ballot.md
 docs/BallotApi.md
