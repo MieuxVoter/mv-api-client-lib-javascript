@@ -23,11 +23,10 @@ class UserEdit {
      * Constructs a new <code>UserEdit</code>.
      * Users create, maintain and participate in Polls.
      * @alias module:MieuxVoter/model/UserEdit
-     * @param username {String} The username must be unique amongst Users.
      */
-    constructor(username) { 
+    constructor() { 
         
-        UserEdit.initialize(this, username);
+        UserEdit.initialize(this);
     }
 
     /**
@@ -35,8 +34,7 @@ class UserEdit {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, username) { 
-        obj['username'] = username;
+    static initialize(obj) { 
     }
 
     /**

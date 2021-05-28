@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import AnyOfGradeCreate from './AnyOfGradeCreate';
+import GradeCreate from './GradeCreate';
 
 /**
  * The BallotCreate model module.
@@ -50,7 +50,7 @@ class BallotCreate {
             obj = obj || new BallotCreate();
 
             if (data.hasOwnProperty('grade')) {
-                obj['grade'] = ApiClient.convertToType(data['grade'], AnyOfGradeCreate);
+                obj['grade'] = GradeCreate.constructFromObject(data['grade']);
             }
         }
         return obj;
@@ -60,8 +60,7 @@ class BallotCreate {
 }
 
 /**
- * The Grade attributed by the Judge to the Proposal.
- * @member {module:MieuxVoter/model/AnyOfGradeCreate} grade
+ * @member {module:MieuxVoter/model/GradeCreate} grade
  */
 BallotCreate.prototype['grade'] = undefined;
 

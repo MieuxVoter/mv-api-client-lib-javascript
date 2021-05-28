@@ -24,11 +24,10 @@ class UserRead {
      * Constructs a new <code>UserRead</code>.
      * Users create, maintain and participate in Polls.
      * @alias module:MieuxVoter/model/UserRead
-     * @param username {String} The username must be unique amongst Users.
      */
-    constructor(username) { 
+    constructor() { 
         
-        UserRead.initialize(this, username);
+        UserRead.initialize(this);
     }
 
     /**
@@ -36,8 +35,7 @@ class UserRead {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, username) { 
-        obj['username'] = username;
+    static initialize(obj) { 
     }
 
     /**

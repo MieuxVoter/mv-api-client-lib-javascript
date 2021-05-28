@@ -24,11 +24,10 @@ class UserjsonldRead {
      * Constructs a new <code>UserjsonldRead</code>.
      * Users create, maintain and participate in Polls.
      * @alias module:MieuxVoter/model/UserjsonldRead
-     * @param username {String} The username must be unique amongst Users.
      */
-    constructor(username) { 
+    constructor() { 
         
-        UserjsonldRead.initialize(this, username);
+        UserjsonldRead.initialize(this);
     }
 
     /**
@@ -36,8 +35,7 @@ class UserjsonldRead {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, username) { 
-        obj['username'] = username;
+    static initialize(obj) { 
     }
 
     /**

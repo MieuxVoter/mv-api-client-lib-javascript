@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import AnyOfGradejsonldCreate from './AnyOfGradejsonldCreate';
+import GradejsonldCreate from './GradejsonldCreate';
 
 /**
  * The BallotjsonldCreate model module.
@@ -59,7 +59,7 @@ class BallotjsonldCreate {
                 obj['@type'] = ApiClient.convertToType(data['@type'], 'String');
             }
             if (data.hasOwnProperty('grade')) {
-                obj['grade'] = ApiClient.convertToType(data['grade'], AnyOfGradejsonldCreate);
+                obj['grade'] = GradejsonldCreate.constructFromObject(data['grade']);
             }
         }
         return obj;
@@ -84,8 +84,7 @@ BallotjsonldCreate.prototype['@id'] = undefined;
 BallotjsonldCreate.prototype['@type'] = undefined;
 
 /**
- * The Grade attributed by the Judge to the Proposal.
- * @member {module:MieuxVoter/model/AnyOfGradejsonldCreate} grade
+ * @member {module:MieuxVoter/model/GradejsonldCreate} grade
  */
 BallotjsonldCreate.prototype['grade'] = undefined;
 

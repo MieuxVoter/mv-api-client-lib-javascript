@@ -23,11 +23,10 @@ class UserCreate {
      * Constructs a new <code>UserCreate</code>.
      * Users create, maintain and participate in Polls.
      * @alias module:MieuxVoter/model/UserCreate
-     * @param username {String} The username must be unique amongst Users.
      */
-    constructor(username) { 
+    constructor() { 
         
-        UserCreate.initialize(this, username);
+        UserCreate.initialize(this);
     }
 
     /**
@@ -35,8 +34,7 @@ class UserCreate {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, username) { 
-        obj['username'] = username;
+    static initialize(obj) { 
     }
 
     /**

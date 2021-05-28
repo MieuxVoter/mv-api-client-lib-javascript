@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import AnyOfGradeRead from './AnyOfGradeRead';
+import GradeRead from './GradeRead';
 import ProposalRead from './ProposalRead';
 
 /**
@@ -57,7 +57,7 @@ class BallotRead {
                 obj['proposal'] = ProposalRead.constructFromObject(data['proposal']);
             }
             if (data.hasOwnProperty('grade')) {
-                obj['grade'] = ApiClient.convertToType(data['grade'], AnyOfGradeRead);
+                obj['grade'] = GradeRead.constructFromObject(data['grade']);
             }
         }
         return obj;
@@ -78,8 +78,7 @@ BallotRead.prototype['uuid'] = undefined;
 BallotRead.prototype['proposal'] = undefined;
 
 /**
- * The Grade attributed by the Judge to the Proposal.
- * @member {module:MieuxVoter/model/AnyOfGradeRead} grade
+ * @member {module:MieuxVoter/model/GradeRead} grade
  */
 BallotRead.prototype['grade'] = undefined;
 

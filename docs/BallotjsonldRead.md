@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **type** | **String** |  | [optional] [readonly] 
 **uuid** | **String** | Universally Unique IDentifier of the Ballot. | [optional] 
 **proposal** | [**ProposaljsonldRead**](ProposaljsonldRead.md) |  | [optional] 
-**grade** | [**AnyOfGradejsonldRead**](AnyOfGradejsonldRead.md) | The Grade attributed by the Judge to the Proposal. | [optional] 
+**grade** | [**GradejsonldRead**](GradejsonldRead.md) |  | [optional] 
 
 

@@ -23,11 +23,10 @@ class UserjsonldEdit {
      * Constructs a new <code>UserjsonldEdit</code>.
      * Users create, maintain and participate in Polls.
      * @alias module:MieuxVoter/model/UserjsonldEdit
-     * @param username {String} The username must be unique amongst Users.
      */
-    constructor(username) { 
+    constructor() { 
         
-        UserjsonldEdit.initialize(this, username);
+        UserjsonldEdit.initialize(this);
     }
 
     /**
@@ -35,8 +34,7 @@ class UserjsonldEdit {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, username) { 
-        obj['username'] = username;
+    static initialize(obj) { 
     }
 
     /**

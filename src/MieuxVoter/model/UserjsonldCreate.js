@@ -23,11 +23,10 @@ class UserjsonldCreate {
      * Constructs a new <code>UserjsonldCreate</code>.
      * Users create, maintain and participate in Polls.
      * @alias module:MieuxVoter/model/UserjsonldCreate
-     * @param username {String} The username must be unique amongst Users.
      */
-    constructor(username) { 
+    constructor() { 
         
-        UserjsonldCreate.initialize(this, username);
+        UserjsonldCreate.initialize(this);
     }
 
     /**
@@ -35,8 +34,7 @@ class UserjsonldCreate {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, username) { 
-        obj['username'] = username;
+    static initialize(obj) { 
     }
 
     /**
