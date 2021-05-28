@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AnyOfGradeCreate = _interopRequireDefault(require("./AnyOfGradeCreate"));
+var _GradeCreate = _interopRequireDefault(require("./GradeCreate"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -58,7 +58,7 @@ var BallotCreate = /*#__PURE__*/function () {
         obj = obj || new BallotCreate();
 
         if (data.hasOwnProperty('grade')) {
-          obj['grade'] = _ApiClient["default"].convertToType(data['grade'], _AnyOfGradeCreate["default"]);
+          obj['grade'] = _GradeCreate["default"].constructFromObject(data['grade']);
         }
       }
 
@@ -69,8 +69,7 @@ var BallotCreate = /*#__PURE__*/function () {
   return BallotCreate;
 }();
 /**
- * The Grade attributed by the Judge to the Proposal.
- * @member {module:MieuxVoter/model/AnyOfGradeCreate} grade
+ * @member {module:MieuxVoter/model/GradeCreate} grade
  */
 
 

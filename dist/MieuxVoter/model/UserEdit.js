@@ -25,12 +25,11 @@ var UserEdit = /*#__PURE__*/function () {
    * Constructs a new <code>UserEdit</code>.
    * Users create, maintain and participate in Polls.
    * @alias module:MieuxVoter/model/UserEdit
-   * @param username {String} The username must be unique amongst Users.
    */
-  function UserEdit(username) {
+  function UserEdit() {
     _classCallCheck(this, UserEdit);
 
-    UserEdit.initialize(this, username);
+    UserEdit.initialize(this);
   }
   /**
    * Initializes the fields of this object.
@@ -41,9 +40,7 @@ var UserEdit = /*#__PURE__*/function () {
 
   _createClass(UserEdit, null, [{
     key: "initialize",
-    value: function initialize(obj, username) {
-      obj['username'] = username;
-    }
+    value: function initialize(obj) {}
     /**
      * Constructs a <code>UserEdit</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.

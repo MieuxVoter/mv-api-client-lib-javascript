@@ -25,12 +25,11 @@ var UserjsonldCreate = /*#__PURE__*/function () {
    * Constructs a new <code>UserjsonldCreate</code>.
    * Users create, maintain and participate in Polls.
    * @alias module:MieuxVoter/model/UserjsonldCreate
-   * @param username {String} The username must be unique amongst Users.
    */
-  function UserjsonldCreate(username) {
+  function UserjsonldCreate() {
     _classCallCheck(this, UserjsonldCreate);
 
-    UserjsonldCreate.initialize(this, username);
+    UserjsonldCreate.initialize(this);
   }
   /**
    * Initializes the fields of this object.
@@ -41,9 +40,7 @@ var UserjsonldCreate = /*#__PURE__*/function () {
 
   _createClass(UserjsonldCreate, null, [{
     key: "initialize",
-    value: function initialize(obj, username) {
-      obj['username'] = username;
-    }
+    value: function initialize(obj) {}
     /**
      * Constructs a <code>UserjsonldCreate</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.

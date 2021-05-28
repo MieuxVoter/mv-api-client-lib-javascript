@@ -27,12 +27,11 @@ var UserRead = /*#__PURE__*/function () {
    * Constructs a new <code>UserRead</code>.
    * Users create, maintain and participate in Polls.
    * @alias module:MieuxVoter/model/UserRead
-   * @param username {String} The username must be unique amongst Users.
    */
-  function UserRead(username) {
+  function UserRead() {
     _classCallCheck(this, UserRead);
 
-    UserRead.initialize(this, username);
+    UserRead.initialize(this);
   }
   /**
    * Initializes the fields of this object.
@@ -43,9 +42,7 @@ var UserRead = /*#__PURE__*/function () {
 
   _createClass(UserRead, null, [{
     key: "initialize",
-    value: function initialize(obj, username) {
-      obj['username'] = username;
-    }
+    value: function initialize(obj) {}
     /**
      * Constructs a <code>UserRead</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.

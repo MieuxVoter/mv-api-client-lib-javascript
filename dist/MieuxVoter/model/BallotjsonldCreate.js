@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AnyOfGradejsonldCreate = _interopRequireDefault(require("./AnyOfGradejsonldCreate"));
+var _GradejsonldCreate = _interopRequireDefault(require("./GradejsonldCreate"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -70,7 +70,7 @@ var BallotjsonldCreate = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('grade')) {
-          obj['grade'] = _ApiClient["default"].convertToType(data['grade'], _AnyOfGradejsonldCreate["default"]);
+          obj['grade'] = _GradejsonldCreate["default"].constructFromObject(data['grade']);
         }
       }
 
@@ -97,8 +97,7 @@ BallotjsonldCreate.prototype['@id'] = undefined;
 
 BallotjsonldCreate.prototype['@type'] = undefined;
 /**
- * The Grade attributed by the Judge to the Proposal.
- * @member {module:MieuxVoter/model/AnyOfGradejsonldCreate} grade
+ * @member {module:MieuxVoter/model/GradejsonldCreate} grade
  */
 
 BallotjsonldCreate.prototype['grade'] = undefined;

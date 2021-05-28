@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AnyOfGradejsonldRead = _interopRequireDefault(require("./AnyOfGradejsonldRead"));
+var _GradejsonldRead = _interopRequireDefault(require("./GradejsonldRead"));
 
 var _ProposaljsonldRead = _interopRequireDefault(require("./ProposaljsonldRead"));
 
@@ -80,7 +80,7 @@ var BallotjsonldRead = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('grade')) {
-          obj['grade'] = _ApiClient["default"].convertToType(data['grade'], _AnyOfGradejsonldRead["default"]);
+          obj['grade'] = _GradejsonldRead["default"].constructFromObject(data['grade']);
         }
       }
 
@@ -118,8 +118,7 @@ BallotjsonldRead.prototype['uuid'] = undefined;
 
 BallotjsonldRead.prototype['proposal'] = undefined;
 /**
- * The Grade attributed by the Judge to the Proposal.
- * @member {module:MieuxVoter/model/AnyOfGradejsonldRead} grade
+ * @member {module:MieuxVoter/model/GradejsonldRead} grade
  */
 
 BallotjsonldRead.prototype['grade'] = undefined;

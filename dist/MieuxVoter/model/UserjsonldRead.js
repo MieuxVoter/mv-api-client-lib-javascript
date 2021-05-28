@@ -27,12 +27,11 @@ var UserjsonldRead = /*#__PURE__*/function () {
    * Constructs a new <code>UserjsonldRead</code>.
    * Users create, maintain and participate in Polls.
    * @alias module:MieuxVoter/model/UserjsonldRead
-   * @param username {String} The username must be unique amongst Users.
    */
-  function UserjsonldRead(username) {
+  function UserjsonldRead() {
     _classCallCheck(this, UserjsonldRead);
 
-    UserjsonldRead.initialize(this, username);
+    UserjsonldRead.initialize(this);
   }
   /**
    * Initializes the fields of this object.
@@ -43,9 +42,7 @@ var UserjsonldRead = /*#__PURE__*/function () {
 
   _createClass(UserjsonldRead, null, [{
     key: "initialize",
-    value: function initialize(obj, username) {
-      obj['username'] = username;
-    }
+    value: function initialize(obj) {}
     /**
      * Constructs a <code>UserjsonldRead</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
